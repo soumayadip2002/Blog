@@ -8,12 +8,3 @@ which will be available to the admin. admin can perform the following operation.
 3) Update
 4) Delete
 
-for the users, category and posts. Here is a picture of dashboard
-
-![Uploading blog1.jpg…]()
-
-here is a picture of the home page
-
-![Uploading blog2.jpg…]()
-here is a picture of single page of posts
-![Uploading blog3.jpg…]()
