@@ -17,12 +17,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloging Website</title>
+    <title>The Thought Box</title>
     <link rel="stylesheet" href="<?php echo ROOT_URL ?>CSS/style.css">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="<?php echo ROOT_URL ?>upload/thought.jpg">
 
 </head>
 
@@ -30,13 +31,13 @@
     <!-- start of navbar -->
     <nav>
         <div class="container nav_container">
-            <a href="<?php echo ROOT_URL ?>" class="nav_logo">home</a>
+            <a href="<?php echo ROOT_URL ?>" class="nav_logo">The Thought Box</a>
 
             <ul class="nav_items">
+                <li><a href="<?php echo ROOT_URL ?>">Home</a></li>
                 <li><a href="<?php echo ROOT_URL ?>./blog.php">Blog</a></li>
                 <li><a href="<?php echo ROOT_URL ?>./about.php">about</a></li>
                 <li><a href="<?php echo ROOT_URL ?>./service.php">services</a></li>
-                <li><a href="<?php echo ROOT_URL ?>./contact.php">contact</a></li>
                 <?php if(isset($_SESSION['user-id'])){ ?>
                     <li class="nav_profile">
                     <div class="avatar">

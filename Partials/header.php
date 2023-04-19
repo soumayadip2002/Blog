@@ -19,19 +19,20 @@
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="upload/thought.jpg">
 </head>
 
 <body>
     <!-- start of navbar -->
     <nav>
         <div class="container nav_container">
-            <a href="<?php echo ROOT_URL ?>" class="nav_logo">home</a>
+            <a href="<?php echo ROOT_URL ?>" class="nav_logo">The Thought Box</a>
 
             <ul class="nav_items">
+                <li><a href="<?php echo ROOT_URL ?>">Home</a></li>
                 <li><a href="<?php echo ROOT_URL ?>./blog.php">Blog</a></li>
                 <li><a href="<?php echo ROOT_URL ?>./about.php">about</a></li>
                 <li><a href="<?php echo ROOT_URL ?>./service.php">services</a></li>
-                <li><a href="#contact">contact</a></li>
                 <?php if(isset($_SESSION['user-id'])){ ?>
                     <li class="nav_profile">
                     <div class="avatar">
@@ -39,13 +40,13 @@
                     </div>
                     <ul>
                         <?php if(isset($_SESSION['user_is_admin'])){?>
-                        <li><a href="./admin/">dashboard</a></li>
+                        <li><a href="admin/">dashboard</a></li>
                         <?php } ?>
-                        <li><a href="./logout.php">logout</a></li>
+                        <li><a href="logout.php">logout</a></li>
                     </ul>
                 </li>
                 <?php } else{ ?>
-                <li><a href="./signin.php">sign in</a></li>
+                <li><a href="signin.php">sign in</a></li>
                 <?php } ?>
 
             </ul>

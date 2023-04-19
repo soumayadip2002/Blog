@@ -127,9 +127,9 @@ nav .nav_container {
 }
 
 .nav_logo {
-    font-weight: 600;
+    font-weight: normal;
     font-size: 1.2rem;
-    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
 }
 
 .nav_items {

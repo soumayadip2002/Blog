@@ -27,7 +27,7 @@ if(isset($_POST['user_submit'])){
                     $_SESSION['user_is_admin'] = true;
                 }
 
-                header('location: ' .ROOT_URL . 'index.php');
+                header('location: ' .ROOT_URL);
             }
             else{
                 $_SESSION['signin'] = "please check your input";
